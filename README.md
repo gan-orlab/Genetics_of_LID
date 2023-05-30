@@ -19,28 +19,28 @@ The PRS includes the PD GWAS hits from Nalls et al.,2019 (PMCID: PMC8422160)
 
 For the logistic and Cox regression, you'll need to run the following
 scripts:
-step1_run.prs.sh-->to obtain PRS for each individual
-step2_prs2zscore.R-->to normalize PRS into Zscores
-step3_quartiles.R-->to run the analyses between the individual
+- step1_run.prs.sh-->to obtain PRS for each individual
+- step2_prs2zscore.R-->to normalize PRS into Zscores
+- step3_quartiles.R-->to run the analyses between the individual
 Zscores and LID
 The all_steps.sh script will run all the steps at once for you, you just need
 to specify the arguments.
 
 Input files for the step1
--base file: the PD GWAS summary statistics (taken from Nalls et al.)
--target file: your cohort bfiles recoded by sex and LID status/time to LID
+- base file: the PD GWAS summary statistics (taken from Nalls et al.)
+- target file: your cohort bfiles recoded by sex and LID status/time to LID
 for logistic regression and Cox regression, respectively
 Input file for the step2:
--covariate file (used also as the argument of --pheno) with LID status, LID_onset.yrs, sex, PD_AAO...
+- covariate file (used also as the argument of --pheno) with LID status, LID_onset.yrs, sex, PD_AAO...
 
 For target bfiles make sure they have been QC'd, otherwise please follow the 
 PRSice instructions on the necessary QC before running the analyses
 (https://www.prsice.info/quick_start/#input)
 
 The results from these analyses will be:
--The results table of continuous Zscores
--The results table of quartiles
--The quartiles plot
+- The results table of continuous Zscores
+- The results table of quartiles
+- The quartiles plot
 
 ## Dopamine pathway PRS
 
@@ -51,19 +51,19 @@ of your analyses
 The pathways PRS refers to the dopaminergic transmission pathway specified in the "dopamine_pathways_and_LIDgenes.gmt" file, which refers to the gencode.v40lift37.annotation.gtf for annotation (http://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_40/GRCh37_mapping/gencode.v40lift37.annotation.gtf.gz).
 
 For each analysis you'll need to run three steps:
-step1-->to obtain PRS for each individual
-step2-->to normalize PRS into Zscores
-step3-->to run the regression between the individual
+- step1-->to obtain PRS for each individual
+- step2-->to normalize PRS into Zscores
+- step3-->to run the regression between the individual
 Zscores and the manifestation of RBD
 
 Steps 2 and 3 are incorporated into a single script.
 
 Input files for the step1
--base file: the meta-analysis summary statistics I provided to the link
--target file: your cohort bfiles recoded by phenotype (LID status) and sex
+- base file: the meta-analysis summary statistics I provided to the link
+- target file: your cohort bfiles recoded by phenotype (LID status) and sex
 Input file for the step2:
--covariate file (used also as the argument of --pheno) with LID status, sex, PD_AAO
--gmt and gtf file, explained above
+- covariate file (used also as the argument of --pheno) with LID status, sex, PD_AAO
+- gmt and gtf file, explained above
 
 For step1 the only argument is the name of your cohort (which will be used to retrieve multiple files like your target files and also to name your final output, so make sure the name is coherent). 
 
@@ -74,5 +74,5 @@ PRSice instructions on the necessary QC before running the analyses
 (https://www.prsice.info/quick_start/#input)
 
 The results from these analyses will be:
--The results csv table(s) of continuous Zscores
--The results csv table(s) of quartiles
+- The results csv table(s) of continuous Zscores
+- The results csv table(s) of quartiles
