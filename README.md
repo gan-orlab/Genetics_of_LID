@@ -74,5 +74,5 @@ PRSice instructions on the necessary QC before running the analyses
 (https://www.prsice.info/quick_start/#input)
 
 The results from these analyses will be:
-- The results csv table(s) of continuous Zscores
-- The results csv table(s) of quartiles
+- The results csv table of continuous Zscores
+- The results csv table of quartiles
