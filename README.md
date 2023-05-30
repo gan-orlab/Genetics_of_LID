@@ -15,7 +15,7 @@ To run the PRS analyses (step 1 below) you will need to download the PRSice soft
 https://www.prsice.info/ and have PRSice.R and PRSice_linux in the same folder
 of your analyses
 
-The PRS includes the PD GWAS hits from Nalls et al.,2019 (PMCID: PMC8422160)
+The PRS includes the PD GWAS hits from Nalls et al.,2019 (PMID: 31701892)
 
 For the logistic and Cox regression, you'll need to run the following
 scripts:
