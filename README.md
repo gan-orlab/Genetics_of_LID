@@ -1,6 +1,6 @@
 # Genetics_of_LID
 
-# Analyses on GBA1 and LRRK2 risk variants.
+## Analyses on GBA1 and LRRK2 risk variants.
 
 The carrier status of the single GBA1 and LRRK2 risk variants were collapsed into single variables, namely the carrier status of GBA1/LRRK2 of any of the included GBA1/LRRK2 risk variants. Such variants include T369M, E326K, N370S and L444P for GBA1; G2019S, M1646T and R1441C/G for LRRK2.
 
@@ -10,7 +10,7 @@ Time to LID (“LID_onset.yrs”) is defined as the time between the start of L-
 
 In the adjusted analyses we used the cumulative levodopa dosage/LEDD for logistic regression (LDOPA_total/LEDD_total) and the last time point levodopa dosage/LEDD (LDOPA_cum/LEDD_cum) for Cox regression. 
 
-# PRS using PD hits
+## PRS using PD hits
 To run the PRS analyses (step 1 below) you will need to download the PRSice software:
 https://www.prsice.info/ and have PRSice.R and PRSice_linux in the same folder
 of your analyses
@@ -42,7 +42,7 @@ The results from these analyses will be:
 -The results table of quartiles
 -The quartiles plot
 
-# Dopamine pathway PRS
+## Dopamine pathway PRS
 
 To run the PRS analyses (step 1 below) you will need to download the PRSice software:
 https://choishingwan.github.io/PRSice/ and have PRSice.R and PRSice_linux in the same folder
