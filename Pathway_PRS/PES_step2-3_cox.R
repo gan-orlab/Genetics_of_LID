@@ -40,7 +40,7 @@ for (set in 4:ncol(prs)){
 #CONTINUOUS
 	sfit <-  summary(coxph(Surv(LID_onset.yrs, LID) ~ Zscore + Sex + PD_AAO + HY + LDOPA_total + PC1 + PC2 + PC3 + PC4 + PC5, data = prs_clin))
 
-	res_cont[[set-3]] <- as.data.frame(sfit$coef[2,])
+	res_cont[[set-3]] <- as.data.frame(sfit$coef[1,])
 	names(res_cont[[set-3]]) <- paste0(FILE, "_", names(prs)[set], "_PRS.score")
 
 
