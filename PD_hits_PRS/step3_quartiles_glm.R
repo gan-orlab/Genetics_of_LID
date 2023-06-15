@@ -6,7 +6,7 @@ FILE <- args[1]
 
 prs_clin <- as.data.frame(fread(paste0(FILE, "_normalized")))
 
-sfit <-  summary(glm(LID ~ Zscore + PD_AAO + Sex + HY + LDOPA_total + PC1 + PC2 + PC3 + PC4 + PC5, data = prs_clin))
+sfit <-  summary(glm(LID ~ Zscore + PD_AAO + Sex + HY + LDOPA_cum + PC1 + PC2 + PC3 + PC4 + PC5, data = prs_clin))
 
 res <- as.data.frame(sfit$coef[2,])
 names(res) <- paste0(FILE, "_PRS.score")
