@@ -27,7 +27,7 @@ head(prs_clin)
 require(broom)
 require(ggplot2)
 
-fit_quar <- glm(prs_clin$LID ~ as.factor(prs_clin$quartile) + PD_AAO + Sex + HY + LDOPA_total + PC1 + PC2 + PC3 + PC4 + PC5, family = "binomial")
+fit_quar <- glm(prs_clin$LID ~ as.factor(prs_clin$quartile) + PD_AAO + Sex + HY + LDOPA_cum + PC1 + PC2 + PC3 + PC4 + PC5, family = "binomial")
 tidy_fitq = tidy(fit_quar)
 tidy_fitq$quartile = c(NA,2,3,4)
 tidy_fitq = tidy_fitq[2:4,]
